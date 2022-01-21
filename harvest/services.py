@@ -121,7 +121,8 @@ class UsersAllAssignments(BaseService):
     def all(self):
         ret = []
         resp = UsersMeEndpoint(credential=self.credential).get()
-        user_id = resp.json()["id"]
+        # user_id = resp.json()["id"]
+        user_id = self.credential.account_id
         resp = UsersAssignmentsEndpoint(
             credential=self.credential, user_id=user_id).get()
         total_pages = resp.json()["total_pages"]
