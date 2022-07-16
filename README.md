@@ -18,7 +18,7 @@ requests library_
 - Getting current authenticated User profile
 
 ```
-from harvest.credential import PersonalAccessAuthCredential
+from harvest.credentials import PersonalAccessAuthCredential
 from harvest.api import UsersMeEndpoint
 
 credential = PersonalAccessAuthCredential(
@@ -35,7 +35,7 @@ print(resp.json())
 - Querying time entries from two days range
 
 ```
-from harvest.credential import PersonalAccessAuthCredential
+from harvest.credentials import PersonalAccessAuthCredential
 from harvest.api import TimeEntryEndpoint
 
 credential = PersonalAccessAuthCredential(
@@ -59,7 +59,7 @@ On services the return is a dictionary
 - Querying today's time entries
 
 ```
-from harvest.credential import PersonalAccessAuthCredential
+from harvest.credentials import PersonalAccessAuthCredential
 from harvest.services import TodayTimeEntries
 
 credential = PersonalAccessAuthCredential(
