@@ -19,10 +19,10 @@ requests library_
 
 ```
 from harvest.credentials import PersonalAccessAuthCredential
-from harvest.api import UsersMeEndpoint
+from harvest.endpoints import UsersMeEndpoint
 
 credential = PersonalAccessAuthCredential(
-    personal_token='xyz',
+    token='xyz',
     account_id='123',
 )
 
